@@ -148,6 +148,8 @@ interrupt 函数会在特定节点暂停 Agent 图的执行。在这种情况下
 “messages”： 当大模型被调用的时候，这将流式输出大模型的Token和元数据。
 "debug"：流式输出在整个graph执行期间尽可能多的信息。
 也可以在同样的时间点通过列表的形式指定多种流式模式。 当你这样做之后，流式输出的数据将是一个元组（tuples，），例如：(stream_mode, data)
+![image](https://github.com/user-attachments/assets/0036aa19-f30a-426c-83e1-a146aea18a62)
+
 #### 流式输出大模型的token和事件（.astream_events)
 什么类型的情况导致事件被发出？
 当节点开始执行的时候，每一个节点（runnable）都发出，在节点执行期间发出 并且在节点完成的时候发出。在事件字段里面，节点事件将有节点名称：on_chain_start，on_chain_stream，on_chain_end
