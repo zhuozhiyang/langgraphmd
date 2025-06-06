@@ -15,7 +15,7 @@ Looping / Branching（循环/分支）：可以实现条件判断、循环流程
 使用langgraph可以快速可靠地构建智能体系统而无需从头实现编排、内存或人工反馈处理的预构建、可复用组件。因为langgraph中已经封装了这些功能：
 ### 内存集成
 LangGraph 支持构建对话agent需要两种内存类型，短期记忆和长期记忆。在代码中一个线程表现为按相同的 thread_id 分组的一系列相关运行。
-！[](https://github.com/zhuozhiyang/langgraphmd/blob/main/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-06-06%20192251.png)
+
 #### 线程级别记忆：通过维护会话中的消息历史记录来跟踪正在进行的对话。
 短期记忆使agent能够跟踪多轮对话。
 1.创建agent时提供一个 checkpointer。checkpointer 能够持久化agent的状态。
